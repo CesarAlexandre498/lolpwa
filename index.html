@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>League News</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fofo.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="FLG">
+    <meta name="apple-mobile-web-app-title" content="FLG">
+    <meta name="theme-color" content="#e90cae">
+    <meta name="msapplication-navbutton-color" content="#e90cae">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="https://laryssagalhardo.github.io/pwa/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
+    <link rel="icon" type="image/png" sizes="515x512" href="https://laryssagalhardo.github.io/pwa/img/passarinho.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="515x512" href="https://laryssagalhardo.github.io/pwa/img/passarinho.png">
+    <script>
+       if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+        console.log("[Aplicativo] funcionário de serviço ativo encontrado, não há necessidade de registrar");
+    } else {
+        navigator.serviceWorker
+            .register("./sw.js", {
+                scope: "./"
+            })
+            .then(function(reg) {
+                console.log("[Aplicativo] O trabalhador do serviço foi registrado para o escopo: " + reg.scope);
+            });
+    }
+}
+    </script>
+</head>
+<body>
+    
+    <div class="jumbotron jumbotron-fluid jumbotron-fofocas">
+        <h1 class="display-4 text-center text-white">League of Legends</h1>
+        <p class="lead text-center text-white">Quer saber o que acontece sobre o jogo?</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success negative-top">
+        <a class="navbar-brand text-white">Noticias</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contato.php">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 col-cm-6 col-md-6">
+                <img src="img/home.jpg" class="img-fluid rounded" alt="League of Legends">
+            </div>
+            <div class="col-12 col-cm-6 col-md-6">
+                <h1 class="text-success text-justify">League of legends</h1>
+                <p class="text-danger text-dark">League of Legends é um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009
+                </p>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+    <div class="row mt-2">
+        <div class="col-12 col-sm-3 col-md-3">
+            <img class="img-fluid rounded" src="img/league.jpg" alt="noti1">
+        </div>
+    <div class="col-12 col-sm-9 col-md-9">
+        <h2 class="text-justify text-success">Planos League para 2021</h2>
+        <p class="text-justify text-dark">"A Riot Forge anunciou neste sábado que Ruined King: Uma História de League of Legends será lançado para consoles e PC no início de 2021. O jogo de RPG em turnos para um jogador marca a estreia do universo de LoL nos consoles.</p>
+         </div>
+    </div>
+    
+
+    <div class="row mt-5 bg-success text-dark">
+        <div class="col-12 text-center mt-3 mb-3">
+                <span class="copyrigtht">Todos direitos reservardos:
+                <br>Cesar Alexandre Gantus</span>
+            </div>
+           </div>
+        
+        
+
+
+
+
+                
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
